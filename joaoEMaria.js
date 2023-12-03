@@ -27,4 +27,14 @@ function setMaria(novoValor) {
     }
 }
 
-export { getJoao, getMaria, setMaria, setJoao }
+function deJoaoParaMaria() {
+    maria = maria + joao;
+    joao = 0;
+}
+
+function deMariaParaJoao() {
+    joao = joao + maria;
+    maria = 0;
+}
+
+export { getJoao, getMaria, setMaria, setJoao, deJoaoParaMaria, deMariaParaJoao }
